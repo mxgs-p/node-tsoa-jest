@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "incremental": false,
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "build",
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "alwaysStrict": true,
+    
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "rootDir": "src",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@models/*": ["src/app/models/*"],
+      "@services/*": ["src/app/services/*"],
+      "@constrollers/*": ["src/app/controllers/*"],
+    },
+    "esModuleInterop": true,
+
+    /* Experimental Options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    /* Advanced Options */
+    "forceConsistentCasingInFileNames": true,
+
+    "resolveJsonModule": true
+  },
+  "include": [ 
+    "src/**/*.ts"
+  ],
+  "exclude" : [
+    "src/**/*.test.ts",
+    "src/test/**/*.ts",
+  ]
+}
